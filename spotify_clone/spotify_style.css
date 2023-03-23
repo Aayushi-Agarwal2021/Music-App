@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Ubuntu:ital,wght@0,300;0,400;1,700&display=swap');
+
+
+body{
+    background-color: rgb(199, 243, 173);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'ubuntu' sans-serif;
+    font-size: 12px;
+    /* height: 42px; */
+    position: sticky;
+    top: 0px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 56px;
+    background-color: rgb(2, 2, 49);
+    color: aliceblue;
+    
+    
+}
+nav ul li{
+    padding: 0 10px;
+}
+.logo img{
+    width: 55px;
+    height: 40px;
+    padding: 0 8px;
+    /* background-color: black; */
+    /* border:  solid rgb(2, 2, 49) ; */
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-right: 5px;
+    padding-left: 0;
+    /* border: 2px solidrgb(2, 2, 49) ; */
+}
+.container{
+    min-height: 75vh;
+    width: 700px;
+    background-color : rgb(2, 5, 26);
+    margin: 6px 210px;
+    display: flex;
+    
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-image: url(https://toppng.com/uploads/preview/music-player-icon-png-11552246926lnqfr5zn99.png); */
+
+}
+.song_list h1{
+
+color: rgb(162, 243, 166);
+}
+
+.songitem{
+    color: rgb(0, 7, 12);
+    background-color: rgb(96, 243, 96);
+    margin: 4px 0px;
+    height: 34px;
+    border-radius: 8px;
+    padding-bottom: 4px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.timestamp i{
+    margin-bottom: 19px;
+}
+
+.songitem img{
+    height: 25px;
+    width: 25px;
+    padding-left: 2px;
+    padding-top: 3px;
+    /* margin: 2px; */
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    
+}
+.songitem:hover{
+    /* box-shadow: 2px 2px 1px white; */
+    border-radius: 5%;
+    border: 2px solid rgb(81, 221, 88);
+}
+.banner{
+    width: 50%;
+    margin-left: 82px;
+    float: right;
+    /* border-left: 2px solid white; */
+    /* margin-left: ; */
+    
+}
+.banner img{
+    margin: 10px 0px;
+    float: right;
+    height: 75vh;
+    width: 360px;
+    border-radius: 49px;
+    /* padding-left: 145px; */
+}
+.banner img:hover{
+    box-shadow: 4px 4px 2px rgb(148, 42, 148);
+    /* box-shadow: 4px 4px 2px red; */
+}
+.songlist{
+    width: 50%;
+}
+.songlistplay{
+    /* margin-left: 20px; */
+    justify-content: right;
+}
+.songName{
+    width: 100px;
+}
+.songlistplay i{
+    margin-left: 10px;
+    color: rgb(1, 13, 22);
+    cursor: pointer;
+    
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    
+}
+.icons{
+    margin: 15px 0;
+}
+.icons i{
+    cursor: pointer;
+}
+.timestamp{
+    margin: 0 20px;
+    
+}
+.songitemcontainer{
+    margin: 35px 0;
+    display: block;
+    /* width: 500px; */
+
+}
+.songinfo{
+    position: absolute;
+    left: 20vh;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+    margin-right: 5px;
+    height: 20px;
+}
